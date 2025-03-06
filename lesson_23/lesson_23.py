@@ -25,7 +25,7 @@ def test_id_name(driver):
     assert result_text.text == input_data
 
 
-def test_classname(driver):
+def test_class_name(driver):
     input_data = "sdgfdsgddsfdfs"
     driver.get('https://www.qa-practice.com/elements/input/simple')
     text_string = driver.find_element(By.CLASS_NAME, 'textinput')
